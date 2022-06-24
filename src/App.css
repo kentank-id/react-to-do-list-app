@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+        'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #8360c3, #2ebf91);
+}
+
+.todo-app {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 520px;
+    min-height: 550px;
+    background: #161a2b;
+    text-align: center;
+    margin: 60px auto;
+    border-radius: 100px 0;
+    padding: 0 20px 70px 20px;
+}
+
+h1 {
+    margin: 32px 0;
+    color: #fff;
+    font-size: 24px;
+}
+
+.complete {
+    text-decoration: line-through;
+    opacity: 0.4;
+}
+
+.todo-form {
+    margin-bottom: 32px;
+}
+
+.todo-input {
+    padding: 14px 32px 14px 16px;
+    border-radius: 4px 0 0 4px;
+    border: 2px solid #76c8a2;
+    outline: none;
+    width: 320px;
+    background: transparent;
+    color: #fff;
+    border-radius: 100px 0 0 100px;
+}
+
+.todo-input::placeholder {
+    color: #e2e2e2;
+}
+
+.todo-button {
+    padding: 16px;
+    border: none;
+    border-radius: 0 100px 100px 0;
+    cursor: pointer;
+    outline: none;
+    background: linear-gradient(to left, #1f4037, #76c8a2);
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.todo-button:hover {
+    background: linear-gradient(to left, #173029, #538b71);
+}
+
+.todo-input.edit {
+    border: 2px solid #cac531;
+}
+
+.todo-button.edit {
+    background: linear-gradient(to right, #9b9622, #e0e788);
+    padding: 16px 22px;
+}
+
+.todo-button.edit:hover  {
+    background: linear-gradient(to right, #7a771e, #646747);
+}
+
+.todo-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.todo-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px auto;
+    color: #fff;
+    background: blue;
+
+    padding: 16px;
+    border-radius: 5px;
+    width: 90%;
+}
+
+.todo-row:nth-child(4n + 1) {
+    background: red;
+}
+
+.todo-row:nth-child(4n + 2) {
+    background: purple;
+}
+
+.todo-row:nth-child(4n + 3) {
+    background: green;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.delete-icon {
+    margin-right: 5px;
+    color: #fff;
+}
+
+.edit-icon {
+    color: #fff;
+}
+
+.footer{
+    margin: 20px;
+    text-align: center;
+}
